@@ -65,10 +65,14 @@ export default {
   width: 350px;
   margin: 10px;
   border-radius: 8px;
+  position: relative;
   .product-image {
-    border-radius: 8px 8px 0px 0px;
+    border-radius: 8px;
   }
   .lower {
+    width: 90.9%;
+    position: absolute;
+    bottom: 0;
     font-size: 16px;
     font-weight: 600;
     padding: 16px;
