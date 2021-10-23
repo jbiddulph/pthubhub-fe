@@ -37,6 +37,11 @@ export default {
   computed: {
     products() {
       let productList = [...productItems];
+      productList.sort((a, b) => {
+        if (a.order > b.order) return 1;
+        else if (a.order < b.order) return -1;
+        return 0;
+      });
       switch (this.selectedFilter) {
         case "Purchased":
           productList = productList.filter(item => {
