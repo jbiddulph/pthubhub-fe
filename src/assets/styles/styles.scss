@@ -1,0 +1,48 @@
+@import "variables.scss";
+
+
+// Screen size min 1275
+@media only screen and (min-width: 1275px) {
+    .product {
+        width: 300px;
+        .lower {
+        background-color: $darkgrey;
+        }
+    }
+}
+// Screen 1025 - 1274
+@media only screen and (min-width: 1025px) and (max-width: 1274px) {
+    .product {
+        width: 232px;
+        .lower {
+        background-color: $darkgrey;
+        }
+    }
+}
+// Screen 801 - 1024
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
+    .product {
+        width: 240px;
+        .lower {
+        background-color: $darkgrey;
+        }
+    }
+}
+// Screen 601 - 800
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+    .product {
+        width: 260px;
+        .lower {
+        background-color: $darkgrey;
+        }
+    }
+}
+// Screen  600p
+@media only screen and (max-width: 600px) {
+    .product {
+        width: 272px;
+        .lower {
+        background-color: $darkgrey;
+        }
+    }
+}
