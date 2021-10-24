@@ -40,17 +40,17 @@ export default {
   computed: {
     discountedPrice() {
       let discountedAmount = 0;
-      let newDiscountedprice = 0;
+      let newDiscountedPrice = 0;
       if (this.product.discount != null) {
         discountedAmount =
           (parseInt(this.product.discount) / 100) * this.product.price;
-        newDiscountedprice = this.product.price - discountedAmount;
-        if (newDiscountedprice == 0) {
-          newDiscountedprice = "FREE";
+        newDiscountedPrice = this.product.price - discountedAmount;
+        if (newDiscountedPrice == 0) {
+          newDiscountedPrice = "FREE";
         }
-        return newDiscountedprice;
+        return newDiscountedPrice;
       } else {
-        return newDiscountedprice;
+        return newDiscountedPrice;
       }
     }
   }
